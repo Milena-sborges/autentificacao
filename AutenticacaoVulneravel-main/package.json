@@ -1,0 +1,15 @@
+{
+  "name": "autenticacao-vulneravel-main",
+  "version": "1.0.0",
+  "description": "Projeto de Microsserviços Seguro - OWASP",
+  "main": "index.js",
+  "dependencies": {
+    "helmet": "^8.1.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "scripts": {
+    "start": "concurrently \"cd auth-service && npm start\" \"cd gateway && npm start\" \"cd product-service && npm start\""
+  }
+}
