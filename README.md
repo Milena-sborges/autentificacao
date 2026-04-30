@@ -1,4 +1,4 @@
-Tecnologias Utilizadas
+#Tecnologias Utilizadas*
 Runtime: Node.js
 
 Framework: Express
@@ -57,13 +57,13 @@ npm install
 
 # Rodar todos os serviços simultaneamente
 npm start
-🧪 Roteiro de Testes
+-- Roteiro de Testes
 Para validar as correções, utilize o Postman ou Thunder Client:
 
-Registro e Login: Crie um usuário em /api/auth/register e faça login em /api/auth/login para obter o Token JWT.
+1. Registro e Login: Crie um usuário em /api/auth/register e faça login em /api/auth/login para obter o Token JWT.
 
-Criação de Produto: Use o token no header (Authorization: Bearer <TOKEN>) para criar um produto em POST /api/products. O userId será vinculado automaticamente pelo token.
+2. Criação de Produto: Use o token no header (Authorization: Bearer <TOKEN>) para criar um produto em POST /api/products. O userId será vinculado automaticamente pelo token.
 
-Validação BOLA: Tente acessar um produto de outro usuário pelo ID. O sistema deve retornar 404 ou Acesso Negado.
+3. Validação BOLA: Tente acessar um produto de outro usuário pelo ID. O sistema deve retornar 404 ou Acesso Negado.
 
-Rate Limit: Tente errar a senha de login 5 vezes seguidas; o sistema bloqueará novas tentativas temporariamente.
+4. Rate Limit: Tente errar a senha de login 5 vezes seguidas; o sistema bloqueará novas tentativas temporariamente.
